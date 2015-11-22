@@ -1,0 +1,208 @@
+
+body {
+  position: relative;
+  margin:0 auto;
+  min-width: 900px;
+  background-color: rgb(9, 19, 46)
+}
+#top {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  top: -10px;
+  background-color:rgb(9, 19, 46);
+}
+#top img{
+  display: inline-block;
+  width: 200px;
+}
+#logoleft {
+  float: left;
+}
+#logoright {
+  float: right;
+  transform: scaleX(-1);
+}
+h1 {
+  display: inline-block;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5em;
+  color: rgb(254, 207, 42);
+  -webkit-text-stroke: 2px rgb(48, 93, 195);
+}
+h2 {
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 29px;
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+h3 {
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+p {
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.scores {
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+  font-size: 40px;
+  -webkit-text-stroke: 2px rgb(48, 93, 195);
+}
+.score-box1 {
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  left: 18%;
+  bottom: 0;
+}
+
+.score-box2 {
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  right: 18%;
+  bottom: 0;
+}
+
+.monsterBox1 {
+  position: absolute;
+  left: 5%;
+  width: 400px;
+  height: 100%;
+  top: 10px;
+}
+.monsterBox2 {
+  position: absolute;
+  right: 6.5%;
+  width: 400px;
+  height: 100%;
+  top: 30px;
+}
+.select1 {
+  margin: 10px 0;
+}
+.select2 {
+  margin: 5px 0;
+}
+#game-area {
+  position: absolute;
+  top: 140px;
+  height: 506px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-image: url(images/GrassBackground.png);
+  min-width: 900px;
+}
+#player1 {
+  position: absolute;
+  display:inline-block;
+  float: left;
+  bottom: 0;
+  left: 0;
+  margin-left: -10px;
+  width: 240px;
+}
+#pic1 {
+  width: 75%;
+  height: auto;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 7px;
+}
+
+#arena {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#player2 {
+  position: absolute;
+  display:inline-block;
+  float: right;
+  width: 240px;
+  bottom: 0;
+  right: 20px;
+}
+#pic2 {
+  width: 80%;
+  height: auto;
+}
+
+#bottom {
+  position: relative;
+  top: 660px;
+  height:150px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  background-color:rgb(9, 19, 46);
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.decider {
+  font-size: 40px;
+  display: inline-block;
+}
+
+#playerText {
+  float: left;
+  width: 400px;
+  -webkit-text-stroke: 2px rgb(209, 28, 28);
+}
+#computerText {
+  position: absolute;
+  display: inline-block;
+  width: 400px;;
+  right: 10%;
+  text-align: right;
+  -webkit-text-stroke: 2px rgb(28, 84, 209);
+}
+#instructions {
+  font-family: 'VT323', ;
+  position: relative;
+  color: black;
+  font-size: 30px;
+  top: 650px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 50px;
+  border: 5px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+#disclaimer {
+  position: relative;
+  color: white;
+  top: 700px;
+  font-size: 30px;
+  text-align: center;
+  width: 600px;
+  margin:0 auto;
+  font-family: 'VT323', ;
+}
+/*
+/////////   THIS IS FOR THE INTRO PAGE!!!! //////////////////
+*/
+
+#dialogue {
+  position: relative;
+  margin:0 auto;
+  width: 600px;
+  height: 400px;
+  margin-top: 300px;
+}
