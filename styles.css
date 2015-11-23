@@ -193,7 +193,6 @@ li {
   text-align: center;
   width: 600px;
   margin:0 auto;
-  font-family: 'VT323', ;
 }
 /*
 /////////   THIS IS FOR THE INTRO PAGE!!!! //////////////////
@@ -205,4 +204,21 @@ li {
   width: 600px;
   height: 400px;
   margin-top: 300px;
+}
+#iconBox {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 70px;
+  top: 100px;
+}
+.element {
+  font-family: 'VT323', ;
+  font-size: 30px;
+  position: absolute;
+  width: 415px;
+  height: 400px;
+  top: 40px;
+  margin-left: 90px;
+  text-align: left;
 }
