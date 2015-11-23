@@ -3,7 +3,8 @@ body {
   position: relative;
   margin:0 auto;
   min-width: 900px;
-  background-color: rgb(9, 19, 46)
+  background-image: url(images/GrassTile.jpg);
+
 }
 #top {
   position: absolute;
@@ -11,7 +12,6 @@ body {
   width: 100%;
   text-align: center;
   top: -10px;
-  background-color:rgb(9, 19, 46);
 }
 #top img{
   display: inline-block;
@@ -148,7 +148,6 @@ li {
   height:150px;
   width: 100%;
   text-align: left;
-  background-color:rgb(9, 19, 46);
   font-family: 'Luckiest Guy', cursive;
 }
 
