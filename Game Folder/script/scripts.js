@@ -4,7 +4,12 @@ function battleMusic() {
   var musicB = document.getElementById('battlemusic');
   musicB.setAttribute('src', 'music/battlemusic.mp3');
   musicB.volume=0.5;
+  var instructionsText = $('#instructions');
+  instructionsText.on('click', function() {
+    this.remove();
+  });
 }
+
 // Create score counter for rock, paper, scissors
 var computerScore = 0;
 var playerScore = 0;
