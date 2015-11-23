@@ -16,6 +16,7 @@ body {
 #top img{
   display: inline-block;
   width: 200px;
+  margin-top: -15px;
 }
 #logoleft {
   float: left;
@@ -197,8 +198,17 @@ li {
   width: 600px;
   margin:0 auto;
 }
+#disclaimer1 {
+  position: relative;
+  color: white;
+  top: 700px;
+  font-size: 30px;
+  text-align: center;
+  width: 600px;
+  margin:0 auto;
+}
 
-@media (max-width: 1100px) and (min-width: 850px) {
+@media (max-width: 1100px) and (min-width: 851px) {
   h1 {
     display: inline-block;
     font-family: 'Luckiest Guy', cursive;
@@ -210,6 +220,25 @@ li {
   #top img{
     display: inline-block;
     width: 160px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 850px) and (min-width: 400px) {
+  h1 {
+    display: inline-block;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3.5em;
+    color: rgb(254, 207, 42);
+    -webkit-text-stroke: 2px rgb(48, 93, 195);
+    margin-top: 60px;
+  }
+  #top img{
+    display: inline-block;
+    width: 160px;
+  }
+  #instructions {
+    font-size: 26px;
+
   }
 }
 /*
