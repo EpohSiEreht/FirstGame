@@ -1,6 +1,6 @@
 console.log('testing 123')
 // Create ability to play music at 50% volume
-function battleMusic() {
+function getStarted() {
   var musicB = document.getElementById('battlemusic');
   musicB.setAttribute('src', 'music/battlemusic.mp3');
   musicB.volume=0.5;
@@ -19,6 +19,20 @@ var $computerScoreCount = $('#computerScore');
 // Create variables that'll hold the value chosen the user and computer
 var $playerChoice = $('#playerChoice');
 var $computerChoice = $('#computerChoice');
+
+var monsterLevel = {
+  water: 1,
+  fire: 1,
+  grass: 1
+}
+
+var computerMonsterLevel = {
+  water: 1,
+  fire: 1,
+  grass: 1
+}
+
+var whoWon;
 // Create a function that'll compare chosen values to determine winner
 function compare(choice1, choice2) {
   // Random number generator to assign water, grass, or fire as the computers choice
@@ -40,24 +54,30 @@ function compare(choice1, choice2) {
   if (choice1 === "water") {
       if (choice2 === "grass") {
           computerScore++;
+          whoWon = 2;
       } else if (choice2 === "fire") {
           playerScore++;
+          whoWon = 1;
       }
       return updateScores();
   }
   if (choice1 === "fire") {
       if (choice2 === "grass") {
           playerScore++;
+          whoWon = 1;
       } else if (choice2 === "water") {
           computerScore++;
+          whoWon = 2;
       }
       return updateScores();
   }
   if (choice1 === "grass") {
       if (choice2 === "water") {
           playerScore++;
+          whoWon = 1;
       } else if (choice2 === "fire") {
           computerScore++;
+          whoWon = 2;
       }
       return updateScores();
   }
@@ -67,66 +87,60 @@ function updateScores() {
   // Holds the current score value and display on the web page
   $playerScoreCount.text(playerScore);
   $computerScoreCount.text(computerScore);
+  // Create variable to determine level of monsters
+
   // Create if statement to evolve monsters per point
-  if(playerScore === 1) {
-    $('#waterA').attr('src', "images/elements/water2.gif");
-    $('#waterA').attr('width', "100px");
-    $('#grassA').attr('src', "images/elements/grass2.gif");
-    $('#grassA').attr('width', "110px");
-    $('#fireA').attr('src', "images/elements/fire2.gif");
-    $('#fireA').attr('width', "130px");
+  monsterLevel[$playerChoice.text()];
+  computerMonsterLevel[$computerChoice.text()];
+
+  // Evovle player's monsters per point
+
+  if(whoWon === 1 && monsterLevel[$playerChoice.text()] === 3) {
+    $('#'+$playerChoice.text()+'A').attr('src', "images/elements/"+$playerChoice.text()+"4.gif");
+    $('#'+$playerChoice.text()+'A').attr('width', "100px");
+    monsterLevel[$playerChoice.text()]++;
     $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(playerScore === 2) {
-    $('#waterA').attr('src', "images/elements/water3.gif");
-    $('#waterA').attr('width', "110px");
-    $('#grassA').attr('src', "images/elements/grass3.gif");
-    $('#grassA').attr('width', "120px");
-    $('#fireA').attr('src', "images/elements/fire3.gif");
-    $('#fireA').attr('width', "120px");
+  }
+  if(whoWon === 1 && monsterLevel[$playerChoice.text()] === 2) {
+    $('#'+$playerChoice.text()+'A').attr('src', "images/elements/"+$playerChoice.text()+"3.gif");
+    $('#'+$playerChoice.text()+'A').attr('width', "100px");
+    monsterLevel[$playerChoice.text()]++;
     $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(playerScore === 3) {
-    $('#waterA').attr('src', "images/elements/water4.gif");
-    $('#waterA').attr('width', "110px");
-    $('#grassA').attr('src', "images/elements/grass4.gif");
-    $('#grassA').attr('width', "130px");
-    $('#fireA').attr('src', "images/elements/fire4.gif");
-    $('#fireA').attr('width', "200px");
+  }
+  if(whoWon === 1 && monsterLevel[$playerChoice.text()] === 1) {
+    $('#'+$playerChoice.text()+'A').attr('src', "images/elements/"+$playerChoice.text()+"2.gif");
+    $('#'+$playerChoice.text()+'A').attr('width', "100px");
+    monsterLevel[$playerChoice.text()]++;
     $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(playerScore === 4) {
-    $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(playerScore === 5 && computerScore < 5) {
+  }
+  else if(whoWon === 1 && playerScore === 5 && computerScore < 5) {
     alert("You won the game!!! Thank you for playing! Click OK to restart the game.");
     // Make sure to refresh page after the game has finished
     location.reload();
   }
+
   // Evolve computer's monsters per point
-  if(computerScore === 1) {
-    $('#blueB').attr('src', "images/computerMonster/water2.gif");
-    $('#blueB').attr('width', "90px");
-    $('#greenB').attr('src', "images/computerMonster/grass2.gif");
-    $('#greenB').attr('width', "100px");
-    $('#redB').attr('src', "images/computerMonster/fire2.gif");
-    $('#redB').attr('width', "120px");
+  if(whoWon === 2 && computerMonsterLevel[$computerChoice.text()] === 3) {
+    $('#'+$computerChoice.text()+'Z').attr('src', "images/computerMonster/"+$computerChoice.text()+"4.gif");
+    $('#'+$computerChoice.text()+'Z').attr('width', "100px");
+    computerMonsterLevel[$computerChoice.text()]++;
     $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(computerScore === 2) {
-    $('#blueB').attr('src', "images/computerMonster/water3.gif");
-    $('#blueB').attr('width', "120px");
-    $('#greenB').attr('src', "images/computerMonster/grass3.gif");
-    $('#greenB').attr('width', "110px");
-    $('#redB').attr('src', "images/computerMonster/fire3.gif");
-    $('#redB').attr('width', "100px");
+  }
+
+  if(whoWon === 2 && computerMonsterLevel[$computerChoice.text()] === 2) {
+    $('#'+$computerChoice.text()+'Z').attr('src', "images/computerMonster/"+$computerChoice.text()+"3.gif");
+    $('#'+$computerChoice.text()+'Z').attr('width', "100px");
+    computerMonsterLevel[$computerChoice.text()]++;
     $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(computerScore === 3) {
-    $('#blueB').attr('src', "images/computerMonster/water4.gif");
-    $('#blueB').attr('width', "120px");
-    $('#greenB').attr('src', "images/computerMonster/grass4.gif");
-    $('#greenB').attr('width', "100px");
-    $('#redB').attr('src', "images/computerMonster/fire4.gif");
-    $('#redB').attr('width', "150px");
+  }
+
+  if(whoWon === 2 && computerMonsterLevel[$computerChoice.text()] === 1) {
+    $('#'+$computerChoice.text()+'Z').attr('src', "images/computerMonster/"+$computerChoice.text()+"2.gif");
+    $('#'+$computerChoice.text()+'Z').attr('width', "100px");
+    computerMonsterLevel[$computerChoice.text()]++;
     $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(computerScore === 4) {
-    $('#levelup').attr('src', 'music/levelup.mp3');
-  } else if(computerScore === 5 && playerScore < 5) {
+  }
+  else if(whoWon = 2 && computerScore === 5 && playerScore < 5) {
     alert("You lost... Better luck next time. Click OK to restart the game.");
     // Make sure to refresh the page after the game has finished
     location.reload();
