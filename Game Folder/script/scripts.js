@@ -2,7 +2,7 @@ console.log('testing 123')
 // Create ability to play music at 50% volume
 function battleMusic() {
   var musicB = document.getElementById('battlemusic');
-  musicB.setAttribute('src', 'battlemusic.mp3');
+  musicB.setAttribute('src', 'music/battlemusic.mp3');
   musicB.volume=0.5;
 }
 // Create score counter for rock, paper, scissors
@@ -70,7 +70,7 @@ function updateScores() {
     $('#grassA').attr('width', "110px");
     $('#fireA').attr('src', "images/elements/fire2.gif");
     $('#fireA').attr('width', "130px");
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(playerScore === 2) {
     $('#waterA').attr('src', "images/elements/water3.gif");
     $('#waterA').attr('width', "110px");
@@ -78,7 +78,7 @@ function updateScores() {
     $('#grassA').attr('width', "120px");
     $('#fireA').attr('src', "images/elements/fire3.gif");
     $('#fireA').attr('width', "120px");
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(playerScore === 3) {
     $('#waterA').attr('src', "images/elements/water4.gif");
     $('#waterA').attr('width', "110px");
@@ -86,9 +86,9 @@ function updateScores() {
     $('#grassA').attr('width', "130px");
     $('#fireA').attr('src', "images/elements/fire4.gif");
     $('#fireA').attr('width', "200px");
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(playerScore === 4) {
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(playerScore === 5 && computerScore < 5) {
     alert("You won the game!!! Thank you for playing! Click OK to restart the game.");
     // Make sure to refresh page after the game has finished
@@ -102,7 +102,7 @@ function updateScores() {
     $('#greenB').attr('width', "100px");
     $('#redB').attr('src', "images/computerMonster/fire2.gif");
     $('#redB').attr('width', "120px");
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(computerScore === 2) {
     $('#blueB').attr('src', "images/computerMonster/water3.gif");
     $('#blueB').attr('width', "120px");
@@ -110,7 +110,7 @@ function updateScores() {
     $('#greenB').attr('width', "110px");
     $('#redB').attr('src', "images/computerMonster/fire3.gif");
     $('#redB').attr('width', "100px");
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(computerScore === 3) {
     $('#blueB').attr('src', "images/computerMonster/water4.gif");
     $('#blueB').attr('width', "120px");
@@ -118,9 +118,9 @@ function updateScores() {
     $('#greenB').attr('width', "100px");
     $('#redB').attr('src', "images/computerMonster/fire4.gif");
     $('#redB').attr('width', "150px");
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(computerScore === 4) {
-    $('#levelup').attr('src', 'levelup.mp3');
+    $('#levelup').attr('src', 'music/levelup.mp3');
   } else if(computerScore === 5 && playerScore < 5) {
     alert("You lost... Better luck next time. Click OK to restart the game.");
     // Make sure to refresh the page after the game has finished
