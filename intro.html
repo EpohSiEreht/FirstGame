@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- This meta will refresh the page into a new url assigned to game.html -->
     <META http-equiv="refresh"
       content="30;URL=game.html">
     <title>Intro</title>
@@ -9,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
   </head>
-<!-- Add the onload function to body that'll play background music at 50% volume when page loads -->
+
   <body>
 <!-- Header with title and logo's -->
     <div id="top">
@@ -19,18 +20,17 @@
     </div>
 
     <div id="game-area">
-<!-- Left side which holds Player 1 and monsters -->
+<!-- Left side which holds Player 1 -->
         <div id="player1">
           <img src="images/Players/Player1.png" id="pic1"></img>
           <h2>Player 1</h2>
         </div>
 
 
-<!-- Center area that'll display scores. -->
+<!-- Center area that'll display the intro dialogue. -->
       <div id="dialogue">
         <div id="iconBox">
           <img src="images/computerDialogue.png" id="icon"/>
-          <!-- <img src="images/redDialogue.png" id="redTalk"/> -->
         </div>
         <div class="element">
 
@@ -38,14 +38,14 @@
         <img src="images/talkBox.png"></img>
       </div>
 
-<!-- Right side which holds Player 2/Computer and monsters -->
+<!-- Right side which holds Player 2/Computer -->
         <div id="player2">
           <img src="images/Players/Computer.png" id="pic2"></img>
           <h2>Computer</h2>
         </div>
 
     </div>
-<!-- bottom div that'll display player's choice, display instructions, and state a disclaimer -->
+<!-- bottom div that'll display state a disclaimer -->
 
     <div id="disclaimer">
     <h6>
@@ -61,7 +61,7 @@
             // Blue talks
             $(".element").typed({
               strings: [
-                "Hey you!!",
+                "Hey you!!!!!",
                 "Yeah you!!!!!",
                 "The silent type ehhhhh?!?!",
                 "I see you also keep dangerous monsters as your slaves at the age of 11.....",

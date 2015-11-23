@@ -86,7 +86,7 @@ p {
   right: 6.5%;
   width: 400px;
   height: 100%;
-  top: 30px;
+  top: 35px;
 }
 .select1 {
   margin: 10px 0;
@@ -147,7 +147,6 @@ li {
   top: 660px;
   height:150px;
   width: 100%;
-  color: white;
   text-align: left;
   background-color:rgb(9, 19, 46);
   font-family: 'Luckiest Guy', cursive;
@@ -156,20 +155,25 @@ li {
 .decider {
   font-size: 40px;
   display: inline-block;
+  margin-top: -10px;
 }
 
 #playerText {
   float: left;
   width: 400px;
   -webkit-text-stroke: 2px rgb(209, 28, 28);
+  text-align: center;
+  color: white;
 }
+
 #computerText {
   position: absolute;
   display: inline-block;
   width: 400px;;
   right: 10%;
-  text-align: right;
+  text-align: center;
   -webkit-text-stroke: 2px rgb(28, 84, 209);
+  color: white;
 }
 #instructions {
   font-family: 'VT323', ;
@@ -207,10 +211,14 @@ li {
 }
 #iconBox {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  right: 70px;
-  top: 100px;
+  width: 100px;
+  height: 100px;
+  right: 60px;
+  top: 76px;
+}
+#iconBox img {
+  height: 100px;
+  width: 100px;
 }
 .element {
   font-family: 'VT323', ;

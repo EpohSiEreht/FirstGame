@@ -5,10 +5,9 @@ function battleMusic() {
   musicB.setAttribute('src', 'battlemusic.mp3');
   musicB.volume=0.5;
 }
-  // Create score counter for rock, paper, scissors
+// Create score counter for rock, paper, scissors
 var computerScore = 0;
 var playerScore = 0;
-
 // Create variable that'll have the score values
 var $playerScoreCount = $('#playerScore');
 var $computerScoreCount = $('#computerScore');
@@ -91,7 +90,7 @@ function updateScores() {
   } else if(playerScore === 4) {
     $('#levelup').attr('src', 'levelup.mp3');
   } else if(playerScore === 5 && computerScore < 5) {
-    alert("You won the game!!! Thank you for playing!");
+    alert("You won the game!!! Thank you for playing! Click OK to restart the game.");
     // Make sure to refresh page after the game has finished
     location.reload();
   }
@@ -123,7 +122,7 @@ function updateScores() {
   } else if(computerScore === 4) {
     $('#levelup').attr('src', 'levelup.mp3');
   } else if(computerScore === 5 && playerScore < 5) {
-    alert("You lost... Better luck next time.");
+    alert("You lost... Better luck next time. Click OK to restart the game.");
     // Make sure to refresh the page after the game has finished
     location.reload();
   }
