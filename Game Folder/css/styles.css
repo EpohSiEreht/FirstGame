@@ -252,7 +252,7 @@ li {
     font-size: 3vw;
   }
   h3 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .scores {
     font-size: 5vw;
@@ -266,7 +266,7 @@ li {
     width: 100%;
   }
   #arena {
-    width: 110px;
+    width: 100%;
     height: 200px;
     text-align: center;
   }
@@ -318,10 +318,11 @@ li {
     margin:0 auto;
   }
   .select1 {
-    width: 170%;
+    width: 140%;
+    padding: 4px 0;
   }
   .select2 {
-    width: 155%;
+    width: 140%;
   }
   .monsterBox1 {
     margin-left: 0;
