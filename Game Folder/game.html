@@ -125,14 +125,19 @@
         3. Get 5 wins and you win!!!</br>
         4. Have fun and click here to continue!
     </div>
+    <div id="ending" style="display: none;">
+        <h5 id="endingText"></h5>
+        <button id="button" type="button" name="button">TRY AGAIN</button>
+    </div>
     <div id="disclaimer">
     <h6>
       This is a non-profit fan-based PARODY game. It is my first attempt at making a simple game with HTML, CSS, and Javascript. Pokemon is owned by Nintendo, GAME FREAK inc, and Creatures Inc. Please support the official franchise.
     </h6>
     </div>
+    <audio autoplay id="attack" src=""></audio>
+    <audio autoplay loop id="critical" src=""></audio>
     <audio autoplay id="levelup" src=""></audio>
-    <audio autoplay loop id="ending" src=""></audio>
-    <audio autoplay loop id="battlemusic" src=""></audio>
+    <audio autoplay loop id="battlemusic" src="music/battlemusic.mp3"></audio>
     <script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
     <script src="script/scripts.js" type="text/javascript"></script>
   </body>

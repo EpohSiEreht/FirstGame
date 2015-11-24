@@ -189,6 +189,35 @@ li {
   border-radius: 20px;
   background-color: white;
 }
+#ending {
+  font-family: 'VT323', ;
+  position: relative;
+  color: black;
+  font-size: 40px;
+  top: 80px;
+  width: 40%;
+  height: 200px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 5px 50px;
+  border: 5px solid black;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+#ending h5{
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+#button {
+  height: 50px;
+  width: 200px;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-size: 40px;
+  font-family: 'VT323', ;
+}
+
 #disclaimer {
   position: relative;
   color: white;
@@ -223,7 +252,7 @@ li {
     margin-top: 0;
   }
 }
-@media (max-width: 850px) and (min-width: 400px) {
+@media (max-width: 851px) and (min-width: 400px) {
   h1 {
     display: inline-block;
     font-family: 'Luckiest Guy', cursive;
@@ -231,6 +260,12 @@ li {
     color: rgb(254, 207, 42);
     -webkit-text-stroke: 2px rgb(48, 93, 195);
     margin-top: 60px;
+  }
+  h3 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
   }
   #top img{
     display: inline-block;
