@@ -26,19 +26,19 @@
 
           <ul class="choices1">
             <li>
-  						<a onclick="compare('water', computerChoice)" >
+  						<a onclick="compare('water', computerChoice)" class="clicky">
   							<img src="images/elements/water1.gif" width="80px" id="waterA" class="select1"/>
   						</a>
   					</li>
 </br>
   					<li>
-  						<a onclick="compare('grass', computerChoice)" >
+  						<a onclick="compare('grass', computerChoice)" class="clicky">
   							<img src="images/elements/grass1.gif" width="80px" id="grassA" class="select1"/>
   						</a>
   					</li>
 </br>
   					<li>
-  						<a onclick="compare('fire', computerChoice)" >
+  						<a onclick="compare('fire', computerChoice)" class="clicky">
   							<img src="images/elements/fire1.gif" width="80px" id="fireA" class="select1"/>
   						</a>
   					</li>
@@ -47,7 +47,7 @@
 
 <!-- Center area that'll display scores. -->
       <div id="arena">
-        <h3>Choose your monster!</h3>
+        <h3>Choose</br>your</br>monster!</h3>
         <div class="scores">
 
           <div class="score-box1">
@@ -71,9 +71,9 @@
 <!-- Right side which holds Player 2/Computer and monsters -->
         <div id="player2">
           <img src="images/Players/Computer.png" id="pic2"></img>
-          <h2>Computer</h2>
+          <h2>Rich Brat</h2>
         </div>
-        <div class="monsterBox2"
+        <div class="monsterBox2">
           <ul class="choices2">
             <li>
               <a>
@@ -104,13 +104,13 @@
 
         <li id="playerText">
 
-            <span>Player Chose</span></br>
+            <span>Player 1 Chose</span></br>
             <span id="playerChoice"></span>
 
         </li>
         <li id="computerText">
 
-            <span>Computer Chose</span></br>
+            <span>Rich Brat Chose</span></br>
             <span id="computerChoice"></span>
 
         </li>
@@ -123,7 +123,8 @@
         1. Think rock, paper, scissors.</br>
         2. Click on one of the 3 monsters!</br>
         3. Get 5 wins and you win!!!</br>
-        4. Have fun and click here to continue!
+        4. Have fun and click here to continue!</br>
+        Hint: Water < Grass < Fire < Water
     </div>
     <div id="ending" style="display: none;">
         <h5 id="endingText"></h5>
@@ -134,6 +135,7 @@
       This is a non-profit fan-based PARODY game. It is my first attempt at making a simple game with HTML, CSS, and Javascript. Pokemon is owned by Nintendo, GAME FREAK inc, and Creatures Inc. Please support the official franchise.
     </h6>
     </div>
+    <audio autoplay id="thud" src=""></audio>
     <audio autoplay id="attack" src=""></audio>
     <audio autoplay loop id="critical" src=""></audio>
     <audio autoplay id="levelup" src=""></audio>

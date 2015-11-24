@@ -2,7 +2,6 @@
 body {
   position: relative;
   margin:0 auto;
-  min-width: 900px;
   background-image: url(../images/GrassTile.jpg);
 
 }
@@ -46,13 +45,7 @@ h3 {
   color: white;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
-p {
-  text-align: center;
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 60px;
-  color: white;
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
+
 .scores {
   font-family: 'Luckiest Guy', cursive;
   color: white;
@@ -77,17 +70,18 @@ p {
 
 .monsterBox1 {
   position: absolute;
-  left: 5%;
-  width: 400px;
+  left: 0;
+  margin-left: 5%;
+  width: 20%;
   height: 100%;
   top: 10px;
 }
 .monsterBox2 {
   position: absolute;
-  right: 6.5%;
-  width: 400px;
+  right: 10%;
+  width: 20%;
   height: 100%;
-  top: 35px;
+  top: 10px;
 }
 .select1 {
   margin: 10px 0;
@@ -103,7 +97,6 @@ p {
   bottom: 0;
   text-align: center;
   background-image: url(../images/GrassBackground.png);
-  min-width: 900px;
 }
 #player1 {
   position: absolute;
@@ -136,7 +129,7 @@ li {
   float: right;
   width: 240px;
   bottom: 0;
-  right: 20px;
+  right: 0;
 }
 #pic2 {
   width: 80%;
@@ -170,7 +163,7 @@ li {
   position: absolute;
   display: inline-block;
   width: 400px;;
-  right: 10%;
+  right: 3%;
   text-align: center;
   -webkit-text-stroke: 2px rgb(28, 84, 209);
   color: white;
@@ -237,43 +230,107 @@ li {
   margin:0 auto;
 }
 
-@media (max-width: 1100px) and (min-width: 851px) {
-  h1 {
-    display: inline-block;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 3.5em;
-    color: rgb(254, 207, 42);
-    -webkit-text-stroke: 2px rgb(48, 93, 195);
-    margin-top: 60px;
+@media (max-width: 1100px) and (min-width: 451px) {
+  #top {
+    margin-top: 20px;
   }
   #top img{
-    display: inline-block;
-    width: 160px;
-    margin-top: 0;
+    width: 15%;
+    margin-top: 10px;
   }
-}
-@media (max-width: 851px) and (min-width: 400px) {
+  #logoleft {
+    float: left;
+  }
+  #logoright {
+    float: right;
+    transform: scaleX(-1);
+  }
   h1 {
-    display: inline-block;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 3.5em;
-    color: rgb(254, 207, 42);
-    -webkit-text-stroke: 2px rgb(48, 93, 195);
-    margin-top: 60px;
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 3vw;
   }
   h3 {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
+    font-size: 4vw;
   }
-  #top img{
-    display: inline-block;
-    width: 160px;
+  .scores {
+    font-size: 5vw;
+  }
+
+  #player1 {
+    margin-left: 10px;
+    width: 100px;
+  }
+  #player1 img {
+    width: 100%;
+  }
+  #arena {
+    width: 110px;
+    height: 200px;
+    text-align: center;
+  }
+  #player2 {
+    width: 100px;
+    right: 13px;
+  }
+  #player2 img {
+    width: 107%;
+  }
+  .decider {
+    font-size: 4vw;
+  }
+  #playerText {
+    width: 100%;
+    text-align: left;
+  }
+  #computerText {
+    width: 100%;;
+    right: 5%;
+    text-align: right;
   }
   #instructions {
-    font-size: 26px;
-
+    font-size: 3vw;
+    width: 40%;
+    padding: 20px 20px;
+  }
+  #ending {
+    font-size: 5vw;
+    top: 80px;
+    width: 40%;
+    height: 40%;
+    padding: 5px 20px;
+  }
+  #ending h5{
+    margin: 10px auto;
+    padding-bottom: 10px;
+  }
+  #disclaimer {
+    top: 530px;
+  }
+  #disclaimer1 {
+    position: relative;
+    color: white;
+    top: 700px;
+    font-size: 30px;
+    text-align: center;
+    width: 600px;
+    margin:0 auto;
+  }
+  .select1 {
+    width: 170%;
+  }
+  .select2 {
+    width: 155%;
+  }
+  .monsterBox1 {
+    margin-left: 0;
+    left: 17%;
+    top: 20%;
+  }
+  .monsterBox2 {
+    top: 19%;
+    right: 27%;
   }
 }
 /*

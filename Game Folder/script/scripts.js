@@ -50,7 +50,9 @@ function compare(choice1, choice2) {
   $computerChoice.text(choice2);
   // Create an if statement that uses if, else statements to determine winner and award points to the winner
   if (choice1 === choice2) {
-      return false;
+      // This plays the punch sound when both parties pick the same element
+      document.getElementById("thud").volume=0.3;
+      $('#thud').attr('src', 'music/thud.mp3');
   }
   if (choice1 === "water") {
       if (choice2 === "grass") {
@@ -127,8 +129,10 @@ function updateScores() {
     $('#levelup').attr('src', 'music/levelup.mp3');
     $('#battlemusic').attr('src', 'music/endingSong.mp3');
     $('#critical').attr('src', '');
+    // .clicky prevents players from clicking on mosnters after game ends
+    $('.clicky').attr('onclick', '');
     $('#ending').css("display", "block");
-    $('#ending h5').text('You won!!!! Hope you enjoyed my first game and thank you for playing!.')
+    $('#ending h5').text('You won!!!! Hope you enjoyed my first game and thank you for playing!')
   }
 
   //////////////////////////////////////////
@@ -162,6 +166,8 @@ function updateScores() {
   }
   else if(whoWon = 2 && computerScore === 5 && playerScore < 5) {
     $('#attack').attr('src', 'music/attack.mp3');
+    // .clicky prevents players from clicking on mosnters after game ends
+    $('.clicky').attr('onclick', '');
     $('#ending').css("display", "block");
     $('#ending h5').text('You lost!!!! Try again by clicking okay!')
   }
