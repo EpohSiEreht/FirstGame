@@ -169,7 +169,7 @@ function updateScores() {
     // .clicky prevents players from clicking on mosnters after game ends
     $('.clicky').attr('onclick', '');
     $('#ending').css("display", "block");
-    $('#ending h5').text('You lost!!!! Try again by clicking okay!')
+    $('#ending h5').text('You lost!!!! Try again by clicking the button below.')
   }
 
 }
