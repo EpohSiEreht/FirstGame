@@ -3,7 +3,6 @@ body {
   position: relative;
   margin:0 auto;
   background-image: url(../images/GrassTile.jpg);
-
 }
 #top {
   position: absolute;
@@ -97,6 +96,7 @@ h3 {
   bottom: 0;
   text-align: center;
   background-image: url(../images/GrassBackground.png);
+
 }
 #player1 {
   position: absolute;
@@ -235,8 +235,7 @@ li {
     margin-top: 20px;
   }
   #top img{
-    width: 15%;
-    margin-top: 10px;
+    display: none;
   }
   #logoleft {
     float: left;
@@ -246,7 +245,7 @@ li {
     transform: scaleX(-1);
   }
   h1 {
-    font-size: 7vw;
+    font-size: 8vw;
   }
   h2 {
     font-size: 3vw;
@@ -305,8 +304,17 @@ li {
     margin: 10px auto;
     padding-bottom: 10px;
   }
+  #button {
+    height: 30px;
+    width: 120px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 25px;
+    font-family: 'VT323', ;
+  }
   #disclaimer {
     top: 530px;
+    width: 100%;
   }
   #disclaimer1 {
     position: relative;
@@ -314,7 +322,7 @@ li {
     top: 700px;
     font-size: 30px;
     text-align: center;
-    width: 600px;
+    width: 100%;
     margin:0 auto;
   }
   .select1 {
@@ -327,10 +335,10 @@ li {
   .monsterBox1 {
     margin-left: 0;
     left: 17%;
-    top: 20%;
+    top: 12%;
   }
   .monsterBox2 {
-    top: 19%;
+    top: 13%;
     right: 27%;
   }
 }
