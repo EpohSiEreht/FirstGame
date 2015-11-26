@@ -208,9 +208,10 @@ li {
   width: 200px;
   border-radius: 8px;
   border: 2px solid black;
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Pixel';
   background-color: lightgrey;
+  margin-bottom: 10px;
 }
 #disclaimer {
   color: white;
