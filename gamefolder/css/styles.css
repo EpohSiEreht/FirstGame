@@ -196,14 +196,14 @@ li {
   height: 200px;
   margin: 0 auto;
   text-align: left;
-  padding: 5px 50px;
+  padding: 5px 30px;
   border: 5px solid black;
   border-radius: 20px;
   background-color: white;
   text-align: center;
 }
 #ending h5{
-  margin: 20px auto;
+  margin: 20px 10px;
   padding-bottom: 10px;
 }
 #button {
@@ -213,6 +213,7 @@ li {
   border: 2px solid black;
   font-size: 40px;
   font-family: 'Pixel';
+  background-color: lightgrey;
 }
 
 #disclaimer {
