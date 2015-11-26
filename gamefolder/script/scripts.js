@@ -1,12 +1,13 @@
 console.log('testing 123')
 // Create ability to play music at 50% volume
 function getStarted() {
-  var musicB = document.getElementById('battlemusic');
-  musicB.volume=0.5;
   var instructionsText = $('#instructions');
   instructionsText.on('click', function() {
     this.remove();
   });
+  var musicB = document.getElementById('battlemusic');
+  musicB.setAttribute('autoplay loop');
+  musicB.volume=0.5;
 }
 function hidingEnding() {
   $('#ending').attr('type', 'display: block');
