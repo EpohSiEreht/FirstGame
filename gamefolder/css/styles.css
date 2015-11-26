@@ -222,15 +222,7 @@ li {
   text-align: center;
   width: 600px;
   margin:0 auto;
-}
-#disclaimer1 {
-  position: relative;
-  color: white;
-  top: 700px;
-  font-size: 30px;
-  text-align: center;
-  width: 600px;
-  margin:0 auto;
+  padding-top: 10px;
 }
 
 @media (max-width: 1100px) and (min-width: 901px) {
