@@ -1,3 +1,11 @@
+@font-face {
+  font-family: PokeFont;
+  src: url(../fonts/pokefont.ttf)
+}
+@font-face {
+  font-family: Pixel;
+  src: url(../fonts/pixel.ttf);
+}
 * {
   margin: 0;
 }
@@ -16,7 +24,7 @@ body {
 }
 h1 {
   display: inline-block;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PokeFont';
   font-size: 40px;
   color: rgb(254, 207, 42);
   -webkit-text-stroke: 2px rgb(48, 93, 195);
@@ -24,21 +32,21 @@ h1 {
 }
 h2 {
   text-align: center;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PokeFont';
   font-size: 29px;
   color: white;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 h3 {
   text-align: center;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PokeFont';
   font-size: 45px;
   color: white;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .scores {
   position: relative;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PokeFont';
   color: white;
   font-size: 40px;
   height: 50px;
@@ -94,7 +102,7 @@ h3 {
   display:inline-block;
   float: left;
   bottom: 0;
-  left: 0;
+  left: 1%;
   margin-left: -10px;
   width: 240px;
 }
@@ -114,7 +122,7 @@ li {
 }
 .decider {
   display: inline-block;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PokeFont';
   margin: 0;
   font-size: 40px;
   text-align: center;
@@ -146,20 +154,18 @@ li {
   float: right;
   width: 240px;
   bottom: 0;
-  right: 0;
-
+  right: 1%;
 }
 #pic2 {
   width: 75%;
   height: auto;
 }
-
 #bottom {
   position: absolute;
   top: 450px;
   height:100%;
   width: 100%;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PokeFont';
   background-image: url("../images/border.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -167,7 +173,7 @@ li {
   background-attachment: fixed;
 }
 #instructions {
-  font-family: 'VT323', ;
+  font-family: 'Pixel';
   position: relative;
   color: black;
   font-size: 30px;
@@ -181,7 +187,7 @@ li {
   background-color: white;
 }
 #ending {
-  font-family: 'VT323', ;
+  font-family: 'Pixel';
   position: relative;
   color: black;
   font-size: 40px;
@@ -206,7 +212,7 @@ li {
   border-radius: 8px;
   border: 2px solid black;
   font-size: 40px;
-  font-family: 'VT323', ;
+  font-family: 'Pixel';
 }
 
 #disclaimer {
@@ -249,18 +255,18 @@ li {
     padding-bottom: 10px;
   }
 }
-@media (max-width: 900px) and (min-width: 650px) {
+@media (max-width: 900px) and (min-width: 701px) {
   h3 {
     font-size: 30px;
   }
   #player1 {
     left: 3%;
-    width: 110px;
+    width: 140px;
     top: 25%;
   }
   #player2 {
     right: 1%;
-    width: 110px;
+    width: 145px;
     top: 25%;
   }
   .monsterBox1 {
@@ -290,10 +296,10 @@ li {
     top: 250px;
   }
   .score-box1 {
-    left: -24%;
+    left: -30%;
   }
   .score-box2 {
-    right: -24%;
+    right: -30%;
   }
   #instructions {
     font-size: 18px;
@@ -311,7 +317,9 @@ li {
 /*
 /////////   THIS IS FOR THE INTRO PAGE!!!! //////////////////
 */
-
+.typed-cursor {
+  display: none;
+}
 #dialogue {
   position: relative;
   margin:0 auto;
@@ -331,7 +339,7 @@ li {
   width: 100px;
 }
 .element {
-  font-family: 'VT323', ;
+  font-family: 'Pixel';
   font-size: 30px;
   position: absolute;
   width: 415px;
