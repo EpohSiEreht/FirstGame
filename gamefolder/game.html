@@ -11,9 +11,9 @@
   <body onload="getStarted()">
 <!-- Header with title and logo's -->
     <div id="top">
-      <img src="images/rockpaperscissors.png" id="logoleft" />
+      <!-- <img src="images/rockpaperscissors.png" id="logoleft" /> -->
       <h1>Water, Grass, Fire!</h1>
-      <img src="images/rockpaperscissors.png" id="logoright" />
+      <!-- <img src="images/rockpaperscissors.png" id="logoright" /> -->
     </div>
 
     <div id="game-area">
@@ -48,24 +48,32 @@
 <!-- Center area that'll display scores. -->
       <div id="arena">
         <h3>Choose your monster!</h3>
+        <div id="leftChoice">
+          <ul class="decider">
+            <li id="playerText">
+              <span>Player 1</span></br>
+              <span id="playerChoice"></span>
+            </li>
+          </ul>
+        </div>
+        <div id="rightChoice">
+          <ul class="decider">
+            <li id="computerText">
+              <span>Rich Brat</span></br>
+              <span id="computerChoice"></span>
+            </li>
+          </ul>
+        </div>
         <div class="scores">
-
           <div class="score-box1">
-
             <div id="playerScore">0</div>
-
-            <span>Score</span>
-
-          </div><!-- score-box -->
-
+              <span>Score</span>
+            </div><!-- score-box -->
           <div class="score-box2">
-
             <div id="computerScore">0</div>
-            <span>Score</span>
-
+              <span>Score</span>
           </div>
-
-      </div>
+        </div>
       </div>
 
 <!-- Right side which holds Player 2/Computer and monsters -->
@@ -99,25 +107,11 @@
     </div>
 <!-- bottom div that'll display player's choice, display instructions, and state a disclaimer -->
     <div id="bottom">
-
-      <ul class="decider">
-
-        <li id="playerText">
-
-            <span>Player 1 Chose</span></br>
-            <span id="playerChoice"></span>
-
-        </li>
-        <li id="computerText">
-
-            <span>Rich Brat Chose</span></br>
-            <span id="computerChoice"></span>
-
-        </li>
-
-
-      </ul>
-
+      <div id="disclaimer">
+      <h6>
+        This is a non-profit fan-based PARODY game. It is my first attempt at making a simple game with HTML, CSS, and Javascript. Pokemon is owned by Nintendo, GAME FREAK inc, and Creatures Inc. Please support the official franchise.
+      </h6>
+      </div>
     </div>
     <div id="instructions">
         1. Think rock, paper, scissors.</br>
@@ -130,11 +124,7 @@
         <h5 id="endingText"></h5>
         <button id="button" type="button" name="button">TRY AGAIN</button>
     </div>
-    <div id="disclaimer">
-    <h6>
-      This is a non-profit fan-based PARODY game. It is my first attempt at making a simple game with HTML, CSS, and Javascript. Pokemon is owned by Nintendo, GAME FREAK inc, and Creatures Inc. Please support the official franchise.
-    </h6>
-    </div>
+
     <audio autoplay id="thud" src=""></audio>
     <audio autoplay id="attack" src=""></audio>
     <audio autoplay loop id="critical" src=""></audio>

@@ -172,7 +172,28 @@ function updateScores() {
     $('#ending h5').text('You lost!!!! Try again by clicking the button below.')
   }
 
+  if($playerChoice.text() === "water") {
+    $playerChoice.css('color', 'rgb(114, 202, 231)');
+    $playerChoice.css('-webkit-text-stroke', '1px solid black');
+  } else if ($playerChoice.text() === "grass") {
+    $playerChoice.css('color', 'rgb(179, 235, 108)');
+    $playerChoice.css('-webkit-text-stroke', '1px solid black');
+  } else if ($playerChoice.text() === "fire") {
+    $playerChoice.css('color', 'rgb(240, 89, 89)');
+    $playerChoice.css('-webkit-text-stroke', '1px solid black');
+  }
+  if($computerChoice.text() === "water") {
+    $computerChoice.css('color', 'rgb(114, 202, 231)')
+    $computerChoice.css('-webkit-text-stroke', '1px solid black');
+  } else if ($computerChoice.text() === "grass") {
+    $computerChoice.css('color', 'rgb(179, 235, 108)');
+    $computerChoice.css('-webkit-text-stroke', '1px solid black');
+  } else if ($computerChoice.text() === "fire") {
+    $computerChoice.css('color', 'rgb(240, 89, 89)');
+    $computerChoice.css('-webkit-text-stroke', '1px solid black');
+  }
 }
+
 
 $('button').on("click", function() {
   location.reload();

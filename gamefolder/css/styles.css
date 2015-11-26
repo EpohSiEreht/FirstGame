@@ -1,34 +1,59 @@
-
+* {
+  top: 0
+}
 body {
   position: relative;
   margin:0 auto;
   background-image: url(../images/GrassTile.jpg);
+  height: 450px;
 }
 #top {
-  position: absolute;
-  height: 150px;
+  position: relative;
   width: 100%;
   text-align: center;
-  top: -10px;
+  height: 50px;
+  margin: 0;
 }
-#top img{
+.decider {
   display: inline-block;
-  width: 200px;
-  margin-top: -15px;
+  font-family: 'Luckiest Guy', cursive;
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+  padding: 0;
 }
-#logoleft {
-  float: left;
+ul {
+  margin: 0;
 }
-#logoright {
-  float: right;
-  transform: scaleX(-1);
+#leftChoice {
+  position: absolute;
+  display: inline-block;
+  -webkit-text-stroke: 2px black;
+  color: rgb(255, 255, 255);
+  width: 250px;
+  margin:0;
+  top: 100px;
+  left: 26%;
+
+}
+#rightChoice {
+  position: absolute;
+  display: inline-block;
+  -webkit-text-stroke: 2px black;
+  color: rgb(255, 255, 255);
+  width: 250px;
+  margin: 0;
+  top: 100px;
+  right: 27%;
+
 }
 h1 {
   display: inline-block;
   font-family: 'Luckiest Guy', cursive;
-  font-size: 5em;
+  font-size: 40px;
   color: rgb(254, 207, 42);
   -webkit-text-stroke: 2px rgb(48, 93, 195);
+  margin: 10px;
 }
 h2 {
   text-align: center;
@@ -40,44 +65,47 @@ h2 {
 h3 {
   text-align: center;
   font-family: 'Luckiest Guy', cursive;
-  font-size: 5vw;
+  font-size: 35px;
   color: white;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 .scores {
+  position: relative;
   font-family: 'Luckiest Guy', cursive;
   color: white;
   font-size: 40px;
-  -webkit-text-stroke: 2px rgb(48, 93, 195);
+  height: 50px;
+  -webkit-text-stroke: 2px rgb(10, 18, 34);
+  top: 220px;
 }
 .score-box1 {
   position: absolute;
   display: inline-block;
   width: 40%;
-  left: 18%;
-  bottom: 0;
+  bottom: -20px;
+  left: 0;
 }
 
 .score-box2 {
   position: absolute;
   display: inline-block;
   width: 40%;
-  right: 18%;
-  bottom: 0;
+  right: 0;
+  bottom: -20px;
 }
 
 .monsterBox1 {
   position: absolute;
-  left: 0;
-  margin-left: 5%;
+  display: inline-block;
+  left: 11%;
   width: 20%;
   height: 100%;
   top: 10px;
 }
 .monsterBox2 {
   position: absolute;
-  right: 10%;
+  right: 13%;
   width: 20%;
   height: 100%;
   top: 10px;
@@ -90,8 +118,8 @@ h3 {
 }
 #game-area {
   position: absolute;
-  top: 140px;
-  height: 506px;
+  top: 50px;
+  height: 400px;
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -106,6 +134,7 @@ h3 {
   left: 0;
   margin-left: -10px;
   width: 240px;
+
 }
 #pic1 {
   width: 75%;
@@ -114,12 +143,10 @@ h3 {
 li {
   list-style: none;
   display: inline-block;
-  padding: 0 7px;
 }
 
 #arena {
   width: 500px;
-  height: 500px;
   margin: 0 auto;
 }
 
@@ -130,50 +157,28 @@ li {
   width: 240px;
   bottom: 0;
   right: 0;
+
 }
 #pic2 {
-  width: 80%;
+  width: 75%;
   height: auto;
 }
 
 #bottom {
   position: relative;
-  top: 660px;
-  height:150px;
+  top: 353px;
+  height:100px;
   width: 100%;
-  text-align: left;
   font-family: 'Luckiest Guy', cursive;
+  padding: 20px 0;
 }
 
-.decider {
-  font-size: 40px;
-  display: inline-block;
-  margin-top: -10px;
-}
-
-#playerText {
-  float: left;
-  width: 400px;
-  -webkit-text-stroke: 2px rgb(209, 28, 28);
-  text-align: center;
-  color: white;
-}
-
-#computerText {
-  position: absolute;
-  display: inline-block;
-  width: 400px;;
-  right: 3%;
-  text-align: center;
-  -webkit-text-stroke: 2px rgb(28, 84, 209);
-  color: white;
-}
 #instructions {
   font-family: 'VT323', ;
   position: relative;
   color: black;
   font-size: 30px;
-  top: 100px;
+  top: 0px;
   width: 40%;
   margin: 0 auto;
   text-align: left;
@@ -187,7 +192,7 @@ li {
   position: relative;
   color: black;
   font-size: 40px;
-  top: 80px;
+  top: 0;
   width: 40%;
   height: 200px;
   margin: 0 auto;
@@ -212,9 +217,8 @@ li {
 }
 
 #disclaimer {
-  position: relative;
   color: white;
-  top: 570px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   font-size: 30px;
   text-align: center;
   width: 600px;
