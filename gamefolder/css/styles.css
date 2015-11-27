@@ -8,10 +8,11 @@
 }
 
 body {
-  position: relative;
+  position: absolute;
   margin:0 auto;
   background-image: url(../images/GrassTile.jpg);
-  height: 500px;
+  height: 100%;
+  width: 100%;
 }
 #top {
   position: relative;
@@ -23,10 +24,11 @@ body {
 h1 {
   display: inline-block;
   font-family: 'PokeFont';
-  font-size: 40px;
+  font-size: 35px;
   color: rgb(254, 207, 42);
   -webkit-text-stroke: 2px rgb(48, 93, 195);
-  margin: 10px;
+  margin: 0;
+  padding-top: 10px;
 }
 h2 {
   text-align: center;
@@ -41,7 +43,8 @@ h3 {
   font-size: 45px;
   color: white;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
-  margin:20px 0;
+  margin: 0;
+  padding-top: 20px;
 }
 .scores {
   position: relative;
@@ -50,7 +53,7 @@ h3 {
   font-size: 40px;
   height: 50px;
   -webkit-text-stroke: 2px rgb(10, 18, 34);
-  top: 220px;
+  top: 270px;
 }
 .score-box1 {
   position: absolute;
@@ -87,8 +90,8 @@ h3 {
   margin: 5px 0;
 }
 #game-area {
-  position: absolute;
-  top: 50px;
+  position: relative;
+  top: 0;
   height: 400px;
   width: 100%;
   bottom: 0;
@@ -159,8 +162,8 @@ li {
   height: auto;
 }
 #bottom {
-  position: absolute;
-  top: 450px;
+  position: relative;
+  top: 0;
   height:100%;
   width: 100%;
   font-family: 'PokeFont';
@@ -172,31 +175,30 @@ li {
 }
 #instructions {
   font-family: 'Pixel';
-  position: relative;
+  position: absolute;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   top: 100px;
-  width: 40%;
-  margin: 0 auto;
+  width: 400px;
   text-align: left;
-  padding: 20px 50px;
+  padding: 20px 47px;
   border: 5px solid black;
   border-radius: 20px;
   background-color: white;
-  z-index: 1000;
+  z-index: 9002;
 }
 #ending {
   font-family: 'Pixel';
-  position: relative;
+  position: absolute;
   color: black;
-  font-size: 40px;
-  width: 40%;
-  margin: 0 auto;
+  font-size: 35px;
+  top: 100px;
+  width: 400px;
+  text-align: center;
+  padding: 20px 47px;
   border: 5px solid black;
   border-radius: 20px;
   background-color: white;
-  text-align: center;
-  top: 100px;
   z-index: 1001;
 }
 #ending h5{
@@ -223,28 +225,6 @@ li {
   padding-top: 10px;
 }
 
-@media (max-width: 1100px) and (min-width: 901px) {
-  h3 {
-    font-size: 35px;
-  }
-  .decider {
-    font-size: 25px;
-    text-align: center;
-    padding: 0;
-  }
-  #instructions {
-    font-size: 25px;
-    top: 100px;
-    padding: 10px 50px;
-  }
-  #ending {
-    top: 100px;
-  }
-  #ending h5{
-    margin: 10px auto;
-    padding-bottom: 10px;
-  }
-}
 @media (max-width: 900px) and (min-width: 701px) {
   h3 {
     font-size: 30px;
